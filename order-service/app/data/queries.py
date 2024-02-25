@@ -9,19 +9,16 @@ def fetch_users():
     return df
 
 def fetch_products():
-    engine = get_db_engine()
     query = "SELECT * FROM products;"
     df = pd.read_sql_query(query, engine)
     return df
 
 def fetch_orders():
-    engine = get_db_engine()
     query = "SELECT * FROM orders;"
     df = pd.read_sql_query(query, engine)
     return df
 
 def fetch_reviews():
-    engine = get_db_engine()
     query = "SELECT * FROM reviews;"
     df = pd.read_sql_query(query, engine)
     return df
