@@ -17,7 +17,7 @@ services:
   web:
     # build:
     #   context: ./order-service
-    image: dani7o0o0/adastrawebapp:v1
+    image: dani7o0o0/adastrawebapp:v2
     volumes:
       - .:/code
     ports:
